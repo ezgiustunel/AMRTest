@@ -16,7 +16,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    //Privacy COMPLIANCE
+    [AMRSDK setUserConsent:YES];
+    [AMRSDK subjectToGDPR:NO];
+    [AMRSDK subjectToCCPA:NO];
+
+    [AMRSDK startWithAppId:@"15066ddc-9c18-492c-8185-bea7e4c7f88c"];
+
     return YES;
 }
 

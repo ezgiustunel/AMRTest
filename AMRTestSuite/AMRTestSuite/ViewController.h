@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AMRSDK/AMRSDK.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <AMRBannerDelegate>
+@property(nonatomic, strong) AMRBanner *mpuBanner;
 
 
 @end
