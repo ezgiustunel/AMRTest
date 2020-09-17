@@ -1,0 +1,51 @@
+//
+//  RewardedViewController.m
+//  AMRTestSuite
+//
+//  Created by Ezgi Ustunel on 17.09.2020.
+//  Copyright © 2020 Ezgi Ustunel. All rights reserved.
+//
+
+#import "RewardedViewController.h"
+
+@interface RewardedViewController ()
+
+@end
+
+@implementation RewardedViewController
+
+#pragma mark - View Lifecycles
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    _rewardedVideo = [AMRRewardedVideo rewardedVideoForZoneId:@"2bdefd44-5269-4cbc-b93a-373b74a2f067"];
+    _rewardedVideo.delegate = self;
+    [_rewardedVideo loadRewardedVideo];
+}
+
+#pragma mark - <AMRRewardedVideoDelegate> Methods
+
+- (void)didReceiveRewardedVideo:(AMRRewardedVideo *)rewardedVideo {
+    [rewardedVideo showFromViewController:self];
+}
+
+- (void)didFailToReceiveRewardedVideo:(AMRRewardedVideo *)rewardedVideo error:(AMRError *)error {
+    NSLog(@"%@", error.errorDescription);
+}
+
+- (void)didShowRewardedVideo:(AMRRewardedVideo *)rewardedVideo {}
+
+- (void)didFailToShowRewardedVideo:(AMRRewardedVideo *)rewardedVideo error:(AMRError *)error {}
+
+- (void)didClickRewardedVideo:(AMRRewardedVideo *)rewardedVideo {}
+
+/*- (void)didCompleteRewardedVideo:(AMRRewardedVideo *)rewardedVideo {
+    [player reward];
+}
+
+- (void)didDismissRewardedVideo:(AMRRewardedVideo *)rewardedVideo {
+    [animation resume];
+}*/
+
+@end

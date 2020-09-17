@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,12 @@
 		9BCBFF9225125B9300F704BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCBFF9125125B9300F704BA /* main.m */; };
 		9BCBFF9C25125B9300F704BA /* AMRTestSuiteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCBFF9B25125B9300F704BA /* AMRTestSuiteTests.m */; };
 		9BCBFFA725125B9300F704BA /* AMRTestSuiteUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCBFFA625125B9300F704BA /* AMRTestSuiteUITests.m */; };
+		9BCBFFB6251351EA00F704BA /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCBFFB5251351EA00F704BA /* InterstitialViewController.m */; };
+		9BCBFFB7251351EA00F704BA /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCBFFB5251351EA00F704BA /* InterstitialViewController.m */; };
+		9BCBFFB8251351EA00F704BA /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCBFFB5251351EA00F704BA /* InterstitialViewController.m */; };
+		9BCBFFBB251354E100F704BA /* RewardedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCBFFBA251354E100F704BA /* RewardedViewController.m */; };
+		9BCBFFBC251354E100F704BA /* RewardedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCBFFBA251354E100F704BA /* RewardedViewController.m */; };
+		9BCBFFBD251354E100F704BA /* RewardedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCBFFBA251354E100F704BA /* RewardedViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +68,10 @@
 		9BCBFFA225125B9300F704BA /* AMRTestSuiteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AMRTestSuiteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BCBFFA625125B9300F704BA /* AMRTestSuiteUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMRTestSuiteUITests.m; sourceTree = "<group>"; };
 		9BCBFFA825125B9300F704BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BCBFFB4251351EA00F704BA /* InterstitialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterstitialViewController.h; sourceTree = "<group>"; };
+		9BCBFFB5251351EA00F704BA /* InterstitialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterstitialViewController.m; sourceTree = "<group>"; };
+		9BCBFFB9251354E100F704BA /* RewardedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RewardedViewController.h; sourceTree = "<group>"; };
+		9BCBFFBA251354E100F704BA /* RewardedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RewardedViewController.m; sourceTree = "<group>"; };
 		B7EFE8B5993BFCCEC46E71F9 /* Pods-AMRTestSuite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMRTestSuite.debug.xcconfig"; path = "Target Support Files/Pods-AMRTestSuite/Pods-AMRTestSuite.debug.xcconfig"; sourceTree = "<group>"; };
 		C3D22A25B8B41FB3FC4FC9F2 /* Pods_AMRTestSuite_AMRTestSuiteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMRTestSuite_AMRTestSuiteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28298BACA1ABE46DCC97E62 /* Pods-AMRTestSuite-AMRTestSuiteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMRTestSuite-AMRTestSuiteUITests.release.xcconfig"; path = "Target Support Files/Pods-AMRTestSuite-AMRTestSuiteUITests/Pods-AMRTestSuite-AMRTestSuiteUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,7 +116,6 @@
 				F12E8EB1EE871C05921C1D63 /* Pods-AMRTestSuiteTests.debug.xcconfig */,
 				4581367022D16A6310A1BE21 /* Pods-AMRTestSuiteTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -146,6 +155,10 @@
 				9BCBFF8D25125B9300F704BA /* LaunchScreen.storyboard */,
 				9BCBFF9025125B9300F704BA /* Info.plist */,
 				9BCBFF9125125B9300F704BA /* main.m */,
+				9BCBFFB4251351EA00F704BA /* InterstitialViewController.h */,
+				9BCBFFB5251351EA00F704BA /* InterstitialViewController.m */,
+				9BCBFFB9251354E100F704BA /* RewardedViewController.h */,
+				9BCBFFBA251354E100F704BA /* RewardedViewController.m */,
 			);
 			path = AMRTestSuite;
 			sourceTree = "<group>";
@@ -454,6 +467,8 @@
 			files = (
 				9BCBFF8725125B9200F704BA /* ViewController.m in Sources */,
 				9BCBFF8125125B9200F704BA /* AppDelegate.m in Sources */,
+				9BCBFFBB251354E100F704BA /* RewardedViewController.m in Sources */,
+				9BCBFFB6251351EA00F704BA /* InterstitialViewController.m in Sources */,
 				9BCBFF9225125B9300F704BA /* main.m in Sources */,
 				9BCBFF8425125B9200F704BA /* SceneDelegate.m in Sources */,
 			);
@@ -463,7 +478,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BCBFFB7251351EA00F704BA /* InterstitialViewController.m in Sources */,
 				9BCBFF9C25125B9300F704BA /* AMRTestSuiteTests.m in Sources */,
+				9BCBFFBC251354E100F704BA /* RewardedViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,7 +488,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BCBFFB8251351EA00F704BA /* InterstitialViewController.m in Sources */,
 				9BCBFFA725125B9300F704BA /* AMRTestSuiteUITests.m in Sources */,
+				9BCBFFBD251354E100F704BA /* RewardedViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
