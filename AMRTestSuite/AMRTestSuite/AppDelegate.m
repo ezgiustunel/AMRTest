@@ -16,19 +16,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    //Privacy COMPLIANCE
     [AMRSDK setUserConsent:YES];
-    [AMRSDK subjectToGDPR:NO];
-    [AMRSDK subjectToCCPA:NO];
-
     [AMRSDK startWithAppId:@"15066ddc-9c18-492c-8185-bea7e4c7f88c"];
-
     return YES;
 }
 
-
 #pragma mark - UISceneSession lifecycle
-
 
 - (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options {
     // Called when a new scene session is being created.
@@ -36,12 +29,10 @@
     return [[UISceneConfiguration alloc] initWithName:@"Default Configuration" sessionRole:connectingSceneSession.role];
 }
 
-
 - (void)application:(UIApplication *)application didDiscardSceneSessions:(NSSet<UISceneSession *> *)sceneSessions {
     // Called when the user discards a scene session.
     // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
     // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
 }
-
 
 @end

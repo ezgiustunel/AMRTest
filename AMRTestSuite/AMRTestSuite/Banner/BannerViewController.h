@@ -8,10 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <AMRSDK/AMRSDK.h>
+#import "AlertSetup.h"
 
-@interface ViewController : UIViewController <AMRBannerDelegate>
-@property(nonatomic, strong) AMRBanner *mpuBanner;
-
-
+@interface BannerViewController : UIViewController <AMRBannerDelegate>
 @end
 

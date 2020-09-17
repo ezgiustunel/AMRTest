@@ -12,19 +12,24 @@
 		8753A638A91C9BF0A5C0E025 /* Pods_AMRTestSuite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7D28566B3B98EAB19B4F54 /* Pods_AMRTestSuite.framework */; };
 		9BCBFF8125125B9200F704BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCBFF8025125B9200F704BA /* AppDelegate.m */; };
 		9BCBFF8425125B9200F704BA /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCBFF8325125B9200F704BA /* SceneDelegate.m */; };
-		9BCBFF8725125B9200F704BA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCBFF8625125B9200F704BA /* ViewController.m */; };
 		9BCBFF8A25125B9200F704BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BCBFF8825125B9200F704BA /* Main.storyboard */; };
 		9BCBFF8C25125B9300F704BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BCBFF8B25125B9300F704BA /* Assets.xcassets */; };
 		9BCBFF8F25125B9300F704BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BCBFF8D25125B9300F704BA /* LaunchScreen.storyboard */; };
 		9BCBFF9225125B9300F704BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCBFF9125125B9300F704BA /* main.m */; };
 		9BCBFF9C25125B9300F704BA /* AMRTestSuiteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCBFF9B25125B9300F704BA /* AMRTestSuiteTests.m */; };
 		9BCBFFA725125B9300F704BA /* AMRTestSuiteUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCBFFA625125B9300F704BA /* AMRTestSuiteUITests.m */; };
-		9BCBFFB6251351EA00F704BA /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCBFFB5251351EA00F704BA /* InterstitialViewController.m */; };
-		9BCBFFB7251351EA00F704BA /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCBFFB5251351EA00F704BA /* InterstitialViewController.m */; };
-		9BCBFFB8251351EA00F704BA /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCBFFB5251351EA00F704BA /* InterstitialViewController.m */; };
-		9BCBFFBB251354E100F704BA /* RewardedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCBFFBA251354E100F704BA /* RewardedViewController.m */; };
-		9BCBFFBC251354E100F704BA /* RewardedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCBFFBA251354E100F704BA /* RewardedViewController.m */; };
-		9BCBFFBD251354E100F704BA /* RewardedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCBFFBA251354E100F704BA /* RewardedViewController.m */; };
+		9BCBFFC12513808600F704BA /* AlertSetup.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCBFFC02513808600F704BA /* AlertSetup.m */; };
+		9BCBFFC22513808600F704BA /* AlertSetup.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCBFFC02513808600F704BA /* AlertSetup.m */; };
+		9BCBFFC32513808600F704BA /* AlertSetup.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCBFFC02513808600F704BA /* AlertSetup.m */; };
+		9BCBFFD0251399FB00F704BA /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCBFFCF251399FB00F704BA /* InterstitialViewController.m */; };
+		9BCBFFD1251399FB00F704BA /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCBFFCF251399FB00F704BA /* InterstitialViewController.m */; };
+		9BCBFFD2251399FB00F704BA /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCBFFCF251399FB00F704BA /* InterstitialViewController.m */; };
+		9BCBFFD525139A1B00F704BA /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCBFFD325139A1B00F704BA /* BannerViewController.m */; };
+		9BCBFFD625139A1B00F704BA /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCBFFD325139A1B00F704BA /* BannerViewController.m */; };
+		9BCBFFD725139A1B00F704BA /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCBFFD325139A1B00F704BA /* BannerViewController.m */; };
+		9BCBFFDA25139A3300F704BA /* RewardedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCBFFD925139A3300F704BA /* RewardedViewController.m */; };
+		9BCBFFDB25139A3300F704BA /* RewardedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCBFFD925139A3300F704BA /* RewardedViewController.m */; };
+		9BCBFFDC25139A3300F704BA /* RewardedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCBFFD925139A3300F704BA /* RewardedViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +60,6 @@
 		9BCBFF8025125B9200F704BA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9BCBFF8225125B9200F704BA /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		9BCBFF8325125B9200F704BA /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		9BCBFF8525125B9200F704BA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9BCBFF8625125B9200F704BA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9BCBFF8925125B9200F704BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9BCBFF8B25125B9300F704BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BCBFF8E25125B9300F704BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -68,10 +71,14 @@
 		9BCBFFA225125B9300F704BA /* AMRTestSuiteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AMRTestSuiteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BCBFFA625125B9300F704BA /* AMRTestSuiteUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMRTestSuiteUITests.m; sourceTree = "<group>"; };
 		9BCBFFA825125B9300F704BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9BCBFFB4251351EA00F704BA /* InterstitialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterstitialViewController.h; sourceTree = "<group>"; };
-		9BCBFFB5251351EA00F704BA /* InterstitialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterstitialViewController.m; sourceTree = "<group>"; };
-		9BCBFFB9251354E100F704BA /* RewardedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RewardedViewController.h; sourceTree = "<group>"; };
-		9BCBFFBA251354E100F704BA /* RewardedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RewardedViewController.m; sourceTree = "<group>"; };
+		9BCBFFBF2513808600F704BA /* AlertSetup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlertSetup.h; sourceTree = "<group>"; };
+		9BCBFFC02513808600F704BA /* AlertSetup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlertSetup.m; sourceTree = "<group>"; };
+		9BCBFFCE251399FA00F704BA /* InterstitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterstitialViewController.h; sourceTree = "<group>"; };
+		9BCBFFCF251399FB00F704BA /* InterstitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterstitialViewController.m; sourceTree = "<group>"; };
+		9BCBFFD325139A1B00F704BA /* BannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerViewController.m; sourceTree = "<group>"; };
+		9BCBFFD425139A1B00F704BA /* BannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerViewController.h; sourceTree = "<group>"; };
+		9BCBFFD825139A3300F704BA /* RewardedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardedViewController.h; sourceTree = "<group>"; };
+		9BCBFFD925139A3300F704BA /* RewardedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardedViewController.m; sourceTree = "<group>"; };
 		B7EFE8B5993BFCCEC46E71F9 /* Pods-AMRTestSuite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMRTestSuite.debug.xcconfig"; path = "Target Support Files/Pods-AMRTestSuite/Pods-AMRTestSuite.debug.xcconfig"; sourceTree = "<group>"; };
 		C3D22A25B8B41FB3FC4FC9F2 /* Pods_AMRTestSuite_AMRTestSuiteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMRTestSuite_AMRTestSuiteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28298BACA1ABE46DCC97E62 /* Pods-AMRTestSuite-AMRTestSuiteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMRTestSuite-AMRTestSuiteUITests.release.xcconfig"; path = "Target Support Files/Pods-AMRTestSuite-AMRTestSuiteUITests/Pods-AMRTestSuite-AMRTestSuiteUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -144,21 +151,19 @@
 		9BCBFF7E25125B9200F704BA /* AMRTestSuite */ = {
 			isa = PBXGroup;
 			children = (
+				9BCBFFC82513962500F704BA /* Banner */,
+				9BCBFFC72513961D00F704BA /* Interstitial */,
+				9BCBFFC62513961300F704BA /* Rewarded */,
+				9BCBFFBE2513801700F704BA /* Alert */,
 				9BCBFF7F25125B9200F704BA /* AppDelegate.h */,
 				9BCBFF8025125B9200F704BA /* AppDelegate.m */,
 				9BCBFF8225125B9200F704BA /* SceneDelegate.h */,
 				9BCBFF8325125B9200F704BA /* SceneDelegate.m */,
-				9BCBFF8525125B9200F704BA /* ViewController.h */,
-				9BCBFF8625125B9200F704BA /* ViewController.m */,
 				9BCBFF8825125B9200F704BA /* Main.storyboard */,
 				9BCBFF8B25125B9300F704BA /* Assets.xcassets */,
 				9BCBFF8D25125B9300F704BA /* LaunchScreen.storyboard */,
 				9BCBFF9025125B9300F704BA /* Info.plist */,
 				9BCBFF9125125B9300F704BA /* main.m */,
-				9BCBFFB4251351EA00F704BA /* InterstitialViewController.h */,
-				9BCBFFB5251351EA00F704BA /* InterstitialViewController.m */,
-				9BCBFFB9251354E100F704BA /* RewardedViewController.h */,
-				9BCBFFBA251354E100F704BA /* RewardedViewController.m */,
 			);
 			path = AMRTestSuite;
 			sourceTree = "<group>";
@@ -179,6 +184,42 @@
 				9BCBFFA825125B9300F704BA /* Info.plist */,
 			);
 			path = AMRTestSuiteUITests;
+			sourceTree = "<group>";
+		};
+		9BCBFFBE2513801700F704BA /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				9BCBFFBF2513808600F704BA /* AlertSetup.h */,
+				9BCBFFC02513808600F704BA /* AlertSetup.m */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		9BCBFFC62513961300F704BA /* Rewarded */ = {
+			isa = PBXGroup;
+			children = (
+				9BCBFFD825139A3300F704BA /* RewardedViewController.h */,
+				9BCBFFD925139A3300F704BA /* RewardedViewController.m */,
+			);
+			path = Rewarded;
+			sourceTree = "<group>";
+		};
+		9BCBFFC72513961D00F704BA /* Interstitial */ = {
+			isa = PBXGroup;
+			children = (
+				9BCBFFCE251399FA00F704BA /* InterstitialViewController.h */,
+				9BCBFFCF251399FB00F704BA /* InterstitialViewController.m */,
+			);
+			path = Interstitial;
+			sourceTree = "<group>";
+		};
+		9BCBFFC82513962500F704BA /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				9BCBFFD425139A1B00F704BA /* BannerViewController.h */,
+				9BCBFFD325139A1B00F704BA /* BannerViewController.m */,
+			);
+			path = Banner;
 			sourceTree = "<group>";
 		};
 		F8E1551CD4B10ACAD472A118 /* Frameworks */ = {
@@ -465,10 +506,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BCBFF8725125B9200F704BA /* ViewController.m in Sources */,
+				9BCBFFD525139A1B00F704BA /* BannerViewController.m in Sources */,
 				9BCBFF8125125B9200F704BA /* AppDelegate.m in Sources */,
-				9BCBFFBB251354E100F704BA /* RewardedViewController.m in Sources */,
-				9BCBFFB6251351EA00F704BA /* InterstitialViewController.m in Sources */,
+				9BCBFFDA25139A3300F704BA /* RewardedViewController.m in Sources */,
+				9BCBFFC12513808600F704BA /* AlertSetup.m in Sources */,
+				9BCBFFD0251399FB00F704BA /* InterstitialViewController.m in Sources */,
 				9BCBFF9225125B9300F704BA /* main.m in Sources */,
 				9BCBFF8425125B9200F704BA /* SceneDelegate.m in Sources */,
 			);
@@ -478,9 +520,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BCBFFB7251351EA00F704BA /* InterstitialViewController.m in Sources */,
+				9BCBFFC22513808600F704BA /* AlertSetup.m in Sources */,
+				9BCBFFDB25139A3300F704BA /* RewardedViewController.m in Sources */,
 				9BCBFF9C25125B9300F704BA /* AMRTestSuiteTests.m in Sources */,
-				9BCBFFBC251354E100F704BA /* RewardedViewController.m in Sources */,
+				9BCBFFD1251399FB00F704BA /* InterstitialViewController.m in Sources */,
+				9BCBFFD625139A1B00F704BA /* BannerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,9 +532,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BCBFFB8251351EA00F704BA /* InterstitialViewController.m in Sources */,
+				9BCBFFC32513808600F704BA /* AlertSetup.m in Sources */,
+				9BCBFFDC25139A3300F704BA /* RewardedViewController.m in Sources */,
 				9BCBFFA725125B9300F704BA /* AMRTestSuiteUITests.m in Sources */,
-				9BCBFFBD251354E100F704BA /* RewardedViewController.m in Sources */,
+				9BCBFFD2251399FB00F704BA /* InterstitialViewController.m in Sources */,
+				9BCBFFD725139A1B00F704BA /* BannerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,6 +692,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AMRTestSuite/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -663,6 +710,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AMRTestSuite/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

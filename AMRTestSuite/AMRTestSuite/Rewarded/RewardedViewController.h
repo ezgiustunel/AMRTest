@@ -1,5 +1,5 @@
 //
-//  InterstitialViewController.h
+//  RewardedViewController.h
 //  AMRTestSuite
 //
 //  Created by Ezgi Ustunel on 17.09.2020.
@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <AMRSDK/AMRSDK.h>
+#import "AlertSetup.h"
 
-@interface InterstitialViewController : UIViewController <AMRInterstitialDelegate>
-@property(nonatomic, strong) AMRInterstitial *fullScreen;
-
+@interface RewardedViewController : UIViewController <AMRRewardedVideoDelegate>
 @end
 

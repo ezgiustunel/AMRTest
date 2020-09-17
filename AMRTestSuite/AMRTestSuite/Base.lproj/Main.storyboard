@@ -14,10 +14,36 @@
                     <view key="view" contentMode="scaleToFill" id="z54-rU-8eW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="lub-CX-1mL">
+                                <rect key="frame" x="80" y="285" width="254" height="128"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ojs-zV-2D2" firstAttribute="bottom" secondItem="lub-CX-1mL" secondAttribute="bottom" constant="323" id="Byl-0U-eDV"/>
+                            <constraint firstItem="lub-CX-1mL" firstAttribute="leading" secondItem="ojs-zV-2D2" secondAttribute="leading" constant="80" id="ST4-zV-Hob"/>
+                            <constraint firstItem="lub-CX-1mL" firstAttribute="top" secondItem="ojs-zV-2D2" secondAttribute="top" constant="241" id="Sd4-J1-sOw"/>
+                            <constraint firstItem="ojs-zV-2D2" firstAttribute="trailing" secondItem="lub-CX-1mL" secondAttribute="trailing" constant="80" id="YNo-eY-DwL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ojs-zV-2D2"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Interstitial" id="GRl-b3-asH"/>
+                    <navigationItem key="navigationItem" title="Interstitial" id="GRl-b3-asH">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="xlV-8a-2He">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="48Q-aW-CkA">
+                                <rect key="frame" x="302" y="7" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Reload"/>
+                                <connections>
+                                    <action selector="reloadAd:" destination="duL-Ob-HTL" eventType="touchUpInside" id="zwH-Pb-jtL"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="BTNReload" destination="48Q-aW-CkA" id="ZiL-Ae-Zxm"/>
+                        <outlet property="activityIndicatorView" destination="lub-CX-1mL" id="Plp-bf-HzH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="128-wV-3Z1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -26,14 +52,25 @@
         <!--Banner-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="BannerViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QPu-Nq-uAT">
                                 <rect key="frame" x="0.0" y="304" width="414" height="128"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="8Gg-j8-MAc">
+                                        <rect key="frame" x="80" y="0.0" width="254" height="128"/>
+                                    </activityIndicatorView>
+                                </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="8Gg-j8-MAc" secondAttribute="trailing" constant="80" id="QoW-1a-a1L"/>
+                                    <constraint firstItem="8Gg-j8-MAc" firstAttribute="leading" secondItem="QPu-Nq-uAT" secondAttribute="leading" constant="80" id="Sag-xi-jUT"/>
+                                    <constraint firstAttribute="bottom" secondItem="8Gg-j8-MAc" secondAttribute="bottom" id="nuY-Y8-Syx"/>
+                                    <constraint firstItem="8Gg-j8-MAc" firstAttribute="top" secondItem="QPu-Nq-uAT" secondAttribute="top" id="y2H-Db-E8Y"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -45,9 +82,23 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Banner" id="9gB-cW-mMb"/>
+                    <navigationItem key="navigationItem" title="Banner" id="9gB-cW-mMb">
+                        <barButtonItem key="rightBarButtonItem" title="Reload" style="plain" id="6yI-GQ-Foe">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mMM-hQ-pVK">
+                                <rect key="frame" x="302" y="7" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Reload"/>
+                                <connections>
+                                    <action selector="reloadAd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="acR-fc-oI8"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="BTNReload" destination="mMM-hQ-pVK" id="0j2-IM-ool"/>
+                        <outlet property="activityIndicatorView" destination="8Gg-j8-MAc" id="RKf-ve-DEd"/>
                         <outlet property="bannerAdView" destination="QPu-Nq-uAT" id="9oK-hp-JPF"/>
+                        <outlet property="rightBarButtonItem" destination="6yI-GQ-Foe" id="z5q-qo-gAk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -85,18 +136,14 @@
                                             <segue destination="BYZ-38-t0r" kind="show" id="2qU-Yh-lW8"/>
                                         </connections>
                                     </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                            <tableViewSection headerTitle="Ad Types" id="xeE-N7-y5D">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="jB3-7v-63n" style="IBUITableViewCellStyleDefault" id="7Kt-sA-BzX">
-                                        <rect key="frame" x="0.0" y="127.66666793823242" width="414" height="43.666667938232422"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="7ri-yf-GNY" style="IBUITableViewCellStyleDefault" id="O6a-FI-hhf">
+                                        <rect key="frame" x="0.0" y="71.666667938232422" width="414" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7Kt-sA-BzX" id="8pc-EZ-rGI">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="O6a-FI-hhf" id="axz-Tn-tgO">
                                             <rect key="frame" x="0.0" y="0.0" width="383" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Interstitial" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jB3-7v-63n">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Interstitial" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7ri-yf-GNY">
                                                     <rect key="frame" x="20" y="0.0" width="355" height="43.666667938232422"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -106,21 +153,17 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="duL-Ob-HTL" kind="show" id="reB-iJ-an2"/>
+                                            <segue destination="duL-Ob-HTL" kind="show" id="eG6-c7-y5K"/>
                                         </connections>
                                     </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                            <tableViewSection headerTitle="Ad Types" id="uPs-FA-nvd">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Qor-EA-Qfc" style="IBUITableViewCellStyleDefault" id="vks-63-lUa">
-                                        <rect key="frame" x="0.0" y="227.33333587646484" width="414" height="43.666667938232422"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="cMv-eC-Lzu" style="IBUITableViewCellStyleDefault" id="WUb-Rt-wrZ">
+                                        <rect key="frame" x="0.0" y="115.33333587646484" width="414" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vks-63-lUa" id="oof-Qx-Clo">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WUb-Rt-wrZ" id="IY2-ja-vVZ">
                                             <rect key="frame" x="0.0" y="0.0" width="383" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Rewarded" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Qor-EA-Qfc">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Rewarded" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cMv-eC-Lzu">
                                                     <rect key="frame" x="20" y="0.0" width="355" height="43.666667938232422"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -130,10 +173,16 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="0vW-7p-9Hy" kind="show" id="pJF-Nr-QxB"/>
+                                            <segue destination="0vW-7p-9Hy" kind="show" id="JGb-n5-OwW"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="" id="xeE-N7-y5D">
+                                <cells/>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="" id="uPs-FA-nvd">
+                                <cells/>
                             </tableViewSection>
                         </sections>
                         <connections>
@@ -154,10 +203,36 @@
                     <view key="view" contentMode="scaleToFill" id="Kdu-ai-oOr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="H4A-ua-mmY">
+                                <rect key="frame" x="80" y="285" width="254" height="128"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="FPw-lC-bHp" firstAttribute="bottom" secondItem="H4A-ua-mmY" secondAttribute="bottom" constant="323" id="Cxn-GF-GE0"/>
+                            <constraint firstItem="H4A-ua-mmY" firstAttribute="leading" secondItem="FPw-lC-bHp" secondAttribute="leading" constant="80" id="Dj8-S0-Hgd"/>
+                            <constraint firstItem="FPw-lC-bHp" firstAttribute="trailing" secondItem="H4A-ua-mmY" secondAttribute="trailing" constant="80" id="S7q-4f-y0e"/>
+                            <constraint firstItem="H4A-ua-mmY" firstAttribute="top" secondItem="FPw-lC-bHp" secondAttribute="top" constant="241" id="hUp-LY-Hqk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="FPw-lC-bHp"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Rewarded" id="RQH-6g-axe"/>
+                    <navigationItem key="navigationItem" title="Rewarded" id="RQH-6g-axe">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="yMA-SL-phW">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MGq-wx-zB3">
+                                <rect key="frame" x="302" y="7" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Reload"/>
+                                <connections>
+                                    <action selector="reloadAd:" destination="0vW-7p-9Hy" eventType="touchUpInside" id="OO7-Bs-IPr"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="BTNReload" destination="MGq-wx-zB3" id="0zt-1Q-kkV"/>
+                        <outlet property="activityIndicatorView" destination="H4A-ua-mmY" id="gnW-Fw-Vmr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j87-bb-usT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
