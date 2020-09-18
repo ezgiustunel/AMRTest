@@ -1,0 +1,6 @@
+framework module Pods_AMRTestSuite {
+  umbrella header "Pods-AMRTestSuite-umbrella.h"
+
+  export *
+  module * { export * }
+}

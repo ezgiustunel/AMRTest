@@ -1,0 +1,24 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '9.0'
+
+target 'AMRTestSuite' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+#core SDK
+pod 'AMRSDK', '~> 1.4'
+#mediation adapters
+pod 'AMRAdapterAdmob', '~> 7.64'
+pod 'AMRAdapterAdmost', '~> 1.3'
+pod 'AMRAdapterUnity', '~> 3.4'
+  # Pods for AMRTestSuite
+
+  target 'AMRTestSuiteTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'AMRTestSuiteUITests' do
+    # Pods for testing
+  end
+
+end
