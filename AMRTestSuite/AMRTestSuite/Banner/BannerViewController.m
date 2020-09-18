@@ -48,16 +48,19 @@
 - (void)didReceiveBanner:(AMRBanner *)banner {
     _activityIndicatorView.hidden = YES;
 
-    self.navigationItem.rightBarButtonItem.enabled = YES;
-
+    self.navigationItem.rightBarButtonItem.enabled = YES;    
     [_bannerAdView addSubview:banner.bannerView];
-    _bannerAdView = _mpuBanner.bannerView;
 }
 
 - (void)didFailToReceiveBanner:(AMRBanner *)banner error:(AMRError *)error {
     NSLog(@"%@", error.errorDescription);
     
-    UIAlertController *alert = [alertSetup informativeAlertMessage:@"This is an erros message!"];
+    UIAlertController *alert = [alertSetup informativeAlertMessage:@"Ad could not be loaded!"];
+    
+    _activityIndicatorView.hidden = YES;
+    
+    self.navigationItem.rightBarButtonItem.enabled = YES;
+    
     [self presentViewController: alert animated: true completion: nil];
 }
 
@@ -71,7 +74,9 @@
     _activityIndicatorView.hidden = NO;
     [_activityIndicatorView startAnimating];
     
-    [self bannerSetup];
+    self.navigationItem.rightBarButtonItem.enabled = NO;
+    
+    [_mpuBanner loadBanner];
 }
 
 @end

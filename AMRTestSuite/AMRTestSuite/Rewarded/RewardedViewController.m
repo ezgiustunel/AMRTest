@@ -51,7 +51,12 @@
 
 - (void)didFailToReceiveRewardedVideo:(AMRRewardedVideo *)rewardedVideo error:(AMRError *)error {
     NSLog(@"%@", error.errorDescription);
-    UIAlertController *alert = [alertSetup informativeAlertMessage:@"This is an erros message!"];
+    UIAlertController *alert = [alertSetup informativeAlertMessage:@"Ad could not be loaded!"];
+    
+    _activityIndicatorView.hidden = YES;
+    
+    self.navigationItem.rightBarButtonItem.enabled = YES;
+    
     [self presentViewController: alert animated: true completion: nil];
 }
 
@@ -70,6 +75,9 @@
 - (IBAction)reloadAd:(id)sender {
     _activityIndicatorView.hidden = NO;
     [_activityIndicatorView startAnimating];
+    
+    self.navigationItem.rightBarButtonItem.enabled = NO;
+
     [self rewardedSetup];
 }
 

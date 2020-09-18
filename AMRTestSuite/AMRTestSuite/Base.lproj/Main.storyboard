@@ -29,7 +29,7 @@
                         <viewLayoutGuide key="safeArea" id="ojs-zV-2D2"/>
                     </view>
                     <navigationItem key="navigationItem" title="Interstitial" id="GRl-b3-asH">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="xlV-8a-2He">
+                        <barButtonItem key="rightBarButtonItem" id="xlV-8a-2He">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="48Q-aW-CkA">
                                 <rect key="frame" x="302" y="7" width="92" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -83,7 +83,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Banner" id="9gB-cW-mMb">
-                        <barButtonItem key="rightBarButtonItem" title="Reload" style="plain" id="6yI-GQ-Foe">
+                        <barButtonItem key="rightBarButtonItem" title="Reload" id="6yI-GQ-Foe">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mMM-hQ-pVK">
                                 <rect key="frame" x="302" y="7" width="92" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -109,15 +109,15 @@
         <scene sceneID="WkI-sY-k5a">
             <objects>
                 <tableViewController id="usO-mG-rgj" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="INW-6x-vyP">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="INW-6x-vyP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
                             <tableViewSection headerTitle="Ad Types" id="ho5-Ed-3wt">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="gpN-0I-797" style="IBUITableViewCellStyleDefault" id="dKK-Ll-jZJ">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="55.333332061767578" width="414" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dKK-Ll-jZJ" id="Rsm-WJ-kYn">
                                             <rect key="frame" x="0.0" y="0.0" width="383" height="43.666667938232422"/>
@@ -137,7 +137,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="7ri-yf-GNY" style="IBUITableViewCellStyleDefault" id="O6a-FI-hhf">
-                                        <rect key="frame" x="0.0" y="71.666667938232422" width="414" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="99" width="414" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="O6a-FI-hhf" id="axz-Tn-tgO">
                                             <rect key="frame" x="0.0" y="0.0" width="383" height="43.666667938232422"/>
@@ -157,7 +157,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="cMv-eC-Lzu" style="IBUITableViewCellStyleDefault" id="WUb-Rt-wrZ">
-                                        <rect key="frame" x="0.0" y="115.33333587646484" width="414" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="142.66666793823242" width="414" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WUb-Rt-wrZ" id="IY2-ja-vVZ">
                                             <rect key="frame" x="0.0" y="0.0" width="383" height="43.666667938232422"/>
@@ -177,12 +177,6 @@
                                         </connections>
                                     </tableViewCell>
                                 </cells>
-                            </tableViewSection>
-                            <tableViewSection headerTitle="" id="xeE-N7-y5D">
-                                <cells/>
-                            </tableViewSection>
-                            <tableViewSection headerTitle="" id="uPs-FA-nvd">
-                                <cells/>
                             </tableViewSection>
                         </sections>
                         <connections>
@@ -218,7 +212,7 @@
                         <viewLayoutGuide key="safeArea" id="FPw-lC-bHp"/>
                     </view>
                     <navigationItem key="navigationItem" title="Rewarded" id="RQH-6g-axe">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="yMA-SL-phW">
+                        <barButtonItem key="rightBarButtonItem" id="yMA-SL-phW">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MGq-wx-zB3">
                                 <rect key="frame" x="302" y="7" width="92" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
